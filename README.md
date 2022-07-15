@@ -21,14 +21,14 @@ git clone https://ghproxy.com/https://github.com/nondevops/n9e-v5-custom-plugins
 [[instances]]
 # # commands, support glob
 commands = [
-     "/opt/categraf_custom_scripts/collect_*.sh"
-     "/opt/categraf_custom_scripts/collect_*.py"
-     "/opt/categraf_custom_scripts/collect_*.go"
-     "/opt/categraf_custom_scripts/collect_*.lua"
-     "/opt/categraf_custom_scripts/collect_*.java"
-     "/opt/categraf_custom_scripts/collect_*.bat"
-     "/opt/categraf_custom_scripts/collect_*.cmd"
-     "/opt/categraf_custom_scripts/collect_*.ps1"
+     "/opt/categraf_custom_scripts/*/collect_*.sh"
+     "/opt/categraf_custom_scripts/*/collect_*.py"
+     "/opt/categraf_custom_scripts/*/collect_*.go"
+     "/opt/categraf_custom_scripts/*/collect_*.lua"
+     "/opt/categraf_custom_scripts/*/collect_*.java"
+     "/opt/categraf_custom_scripts/*/collect_*.bat"
+     "/opt/categraf_custom_scripts/*/collect_*.cmd"
+     "/opt/categraf_custom_scripts/*/collect_*.ps1"
 ]
 timeout = 60
 interval = 60
