@@ -32,7 +32,7 @@ function check_domain() {
     domain_tmp=`echo $domain |cut -d '.' -f 2`
     if [ "$domain_tmp" == "com" ];then
         # whois baidu.com | grep "Expiration Date" |awk '{print $5}' | cut -c1-10 | awk -F '-' '{print $1 $2 $3}'
-        expire_datea=`${timeout_time} whois $domain | grep "Expiration Date" |awk '{print $5}' | cut -c1-10 | awk -F '-' '{print $1 $2 $3}'`
+        expire_date=`${timeout_time} whois $domain | grep "Expiration Date" |awk '{print $5}' | cut -c1-10 | awk -F '-' '{print $1 $2 $3}'`
 
     elif [ "$domain_tmp" == "cn" -o "$domain_tmp" == "com.cn" ];then
         expire_date=`${timeout_time} whois $domain | grep "Expiration Time" | awk '{print $3}' | awk -F '-' '{print $1 $2 $3}'`
