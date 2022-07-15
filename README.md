@@ -7,7 +7,9 @@
 
 # 使用方法
 ## 克隆
+```
 git clone https://ghproxy.com/https://github.com/nondevops/n9e-v5-custom-plugins.git
+```
 
 ## 修改input.exec配置
 根据自己的需求，定义```instances```的程序执行路径
